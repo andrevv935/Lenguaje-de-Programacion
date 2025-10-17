@@ -1,5 +1,5 @@
 use std::io;
-use crate::modules::{save_data, Edits, Status, Tasks};
+use crate::modules::{Tasks, Status, Edits};
 
 pub fn menu(tasks_array: &mut Vec<Tasks>){
     loop{
@@ -172,8 +172,6 @@ pub fn menu(tasks_array: &mut Vec<Tasks>){
                 }
             }
             0 => { 
-                println!("Exiting the task manager. Goodbye!");
-                save_data(tasks_array);
                 break; 
             }
             _ => {
