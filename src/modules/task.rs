@@ -1,6 +1,7 @@
 use crate::modules::Status;
+use serde::{Deserialize, Serialize};
 
-#[derive(Debug)]
+#[derive(Debug, Serialize, Deserialize)]
 
 pub struct Tasks{
     pub task_id: i32,
